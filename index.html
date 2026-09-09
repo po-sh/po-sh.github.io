@@ -21,19 +21,38 @@
     }
     body {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: #ffffff;
-      font-family: 'Pacifico', cursive;
+      background-color: #060d21;
     }
     h1 {
+      font-family: 'Pacifico', cursive;
       font-size: clamp(3rem, 12vw, 8rem);
       color: #1e88e5;
+      text-shadow: 0 0 24px rgba(30, 136, 229, 0.45);
       user-select: none;
+      line-height: 1.1;
+    }
+    .contact {
+      margin-top: 1rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: clamp(0.85rem, 2.5vw, 1.05rem);
+      color: #8fa3c7;
+      letter-spacing: 0.02em;
+    }
+    .contact a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .contact a:hover {
+      color: #d0e1fd;
     }
   </style>
 </head>
 <body>
   <h1>po.sh</h1>
+  <p class="contact">Get in touch — <a href="mailto:hello@po.sh">hello@po.sh</a></p>
 </body>
 </html>
